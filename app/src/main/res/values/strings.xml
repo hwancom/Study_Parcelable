@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Study_Parcelable</string>
+    <string name="btn1_main">메뉴화면 띄우기</string>
+    <string name="btn1_menu">Return To Main</string>
+    <string name="txt1_menu">Menu Activity</string>
+</resources>
