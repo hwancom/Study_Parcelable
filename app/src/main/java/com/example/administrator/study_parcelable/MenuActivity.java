@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -39,8 +40,12 @@ public class MenuActivity extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(), "전달받은 이름 리스트 갯수" + names.size(), Toast.LENGTH_LONG).show();
             }
 
-            BookData bookData = (BookData) intent.getParcelableExtra("bookData");
+            BookData bookData = intent.getParcelableExtra("bookData");
             if (bookData != null) {
+
+                EditText editText1 = findViewById(R.id.editText1);
+                editText1.setText(bookData.title);
+
                 Toast.makeText(getApplicationContext(), "전달받은 BookData" + bookData.title, Toast.LENGTH_LONG).show();
             }
         }
